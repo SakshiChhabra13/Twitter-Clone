@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>twitter clone</title>
+</head>
+
+<body>
+    <header>
+        <aside>
+            <a href="#" class="logo"><i class="fab fa-twitter"></i></a>
+            <ul>
+                <li class="li_active"><a href="/"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="#"><i class="fa-solid fa-hashtag"></i> Explore</a></li>
+                <li><a href="#"><i class="fa-solid fa-bell"></i> Notification</a></li>
+                <li><a href="#"><i class="fa-solid fa-message"></i> Message</a></li>
+                <li><a href="#"><i class="fa-solid fa-bookmark"></i> Bookmark</a></li>
+                <li><a href="#"><i class="fa-solid fa-clipboard-list"></i> List</a></li>
+                <li><a href="profile.html"><i class="fa-solid fa-user"></i> Profile</a></li>
+                <li><a href="#"><i class="fa-solid fa-ellipsis"></i> More</a></li>
+
+
+            </ul>
+            <button>Tweet</button>
+        </aside>
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="">Help</a></li>
+                </ul>
+                <div class="search-bar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search on twitter...">
+                </div>
+                <div class="user">
+                    <h6>Hey,Sakshi!</h6>
+                    <img src="img1.png" alt="">
+                </div>
+            </nav>
+            <div class="profile_post_follow_bx">
+                <div class="profile_bx">
+                    <div class="profile_card">
+                        <img src="bluetick.png" alt="" class="blue_tick_pc">
+                        <img src="img1.png" alt="" class="profile_img">
+                        <h5>Sakshi Chhabra</h5>
+                        <h6>@sakshi_chhabra</h6>
+                        <address>
+                            <a href="#">
+                                <i class="fa-solid fa-location-dot"></i>
+                                Ludhiana City
+                            </a>
+                            <a href="">
+                                <i class="fa-solid fa-earth-asia"></i>
+                            </a>
+                        </address>
+                        <p>Developer Artist focused on travel and nature content</p>
+                        <div class="data">
+                            <div class="data_card">
+                                <p>Tweets</p>
+                                <h4>857</h4>
+                            </div>
+                            <div class="data_card">
+                                <p>Followers</p>
+                                <h4>11.2k</h4>
+                            </div>
+                            <div class="data_card">
+                                <p>Following</p>
+                                <h4>253</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="activity_bx">
+                        <div class="activity_card_bx">
+                            <i class="fa-solid fa-eye"></i>
+                            <h6>Activity</h6>
+                        </div>
+                        <div class="activity_card_bx">
+                            <i class="fa-solid fa-bolt"></i>
+                            <h6>Moments</h6>
+                        </div>
+                        <div class="activity_card_bx">
+                            <i class="fa-solid fa-user-group"></i>
+                            <h6>Friends</h6>
+                        </div>
+                        <div class="activity_card_bx">
+                            <i class="fa-solid fa-gear"></i>
+                            <h6>Edit Profile</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="post_follow_bx">
+                    <div class="post">
+                        <nav>
+                            <ul>
+                                <li><a href="#">Tweets</a></li>
+                                <li><a href="#">Tweets & Followers</a></li>
+                                <li><a href="#">Media</a></li>
+                                <li><a href="#">Likes</a></li>
+                            </ul>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </nav>
+                        <div class="post_main_bx">
+                            <!-- tweet box start -->
+                            <div class="home_page_first_bx">
+                                <img src="img1.png" alt="" class="home_profile_picture">
+                                <div class="write_tweet_bx">
+                                    <button id="audience_btn">
+                                        Everyone <i class="fas fa-angle-down"></i>
+                                    </button>
+                                    <div class="show_bx show_bx_1">
+                                        <h6>Choose audience</h6>
+                                        <li class="check_audience">
+                                            <div>
+                                                <i class="fas fa-globe-asia"></i>
+                                                <h6>Everyone</h6>
+                                            </div>
+                                            <i class="fas fa-check check_audience_i"></i>
+                                        </li>
+                                        <li class="check_audience">
+                                            <div>
+                                                <i class="fas fa-users-cog"></i>
+                                                <div class="edit_tweet_user">
+                                                    <h6>Twitter Circle</h6>
+                                                    <span>0 People</span><button>Edit</button>
+                                                </div>
+                                            </div>
+                                            <i class="fas fa-check check_audience_i"></i>
+                                        </li>
+                                    </div>
+                                    <br>
+                                    <textarea name="" id="tweet_text_area" oninput="auto_grow(this)" maxlength="200" placeholder="What's happening?"></textarea>
+                                    <button class="select_reply_btn">
+                                        <i class="fas fa-globe-asia"></i> Everyone can reply
+                                    </button>
+                                    <div class="show_bx who_can_reply_bx">
+                                        <h6>Choose audience</h6>
+                                        <p>Choose who can reply to this tweet. <br>
+                                            Anyone mentioned can always reply.
+                                        </p>
+                                        <li class="who_can_reply">
+                                            <div>
+                                                <i class="fas fa-globe-asia"></i>
+                                                <h6>Everyone can reply</h6>
+                                            </div>
+                                            <i class="fas fa-check who_can_reply_i"></i>
+                                        </li>
+                                        <li class="who_can_reply">
+                                            <div>
+                                                <i class="fas fa-user-check"></i>
+                                                <h6>People you follow</h6>
+                                            </div>
+                                            <i class="fas fa-check who_can_reply_i"></i>
+                                        </li>
+                                        <li class="who_can_reply">
+                                            <div>
+                                                <i style="font-style: normal;">@</i>
+                                                <h6>Only people you mention</h6>
+                                            </div>
+                                            <i class="fas fa-check who_can_reply_i"></i>
+                                        </li>
+
+                                    </div>
+                                    <div class="attach_media">
+                                        <div class="select_media">
+                                            <div class="media_card">
+                                                <input type="file" name="" accept="image/jpg, image/png, image/gif, video/mp4">
+                                                <i class="fa-regular fa-image"></i>
+                                            </div>
+                                            <div class="media_card">
+                                                <i class="fa-solid fa-gift"></i>
+                                            </div>
+                                            <div class="media_card">
+                                                <i class="fa-solid fa-square-poll-vertical"></i>
+                                            </div>
+                                            <div class="media_card">
+                                                <i class="fa-regular fa-face-smile"></i>
+                                            </div>                                            
+                                            <div class="media_card">
+                                                <i class="fa-solid fa-calendar-week"></i>
+                                            </div>
+                                            <div class="media_card">
+                                                <i class="fa-solid fa-location-dot"></i>
+                                            </div>
+                                        </div>
+                                        <div class="tweet_letter_count">
+                                            <h6 id="text_limit">100%</h6>
+                                            <button id="tweet_post">Tweet</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post_card_bx1">
+                                <!-- ... other content ... -->
+                               
+                                <div class="content">
+                            <div class="post_card_bx">
+                                <div class="post_profile">
+                                    <img src="img1.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <h6 class="retweet"><i class="fa-solid fa-repeat"></i> RONALDO RETWEETED</h6>
+                                    <div class="user_name_time">
+                                        <h5>Sakshi Chhabra <img src="bluetick.png" alt="">
+                                            <p> @sakshi_chhabra </p>
+                                        </h5>
+                                        <h6><i class="fa-regular fa-clock"></i> 25 mins</h6>
+                                    </div>
+                                    <h3>Very good words...</h3>
+                                    <div class="retweet_content_bx">
+                                        <div class="user_name_time">
+                                            <h5><img src="cristiono.jpg" alt=""> Cristiano Ronaldo <p> @ronaldo </p>
+                                            </h5>
+                                            <h6><i class="fa-regular fa-clock"></i> 1 hour</h6>
+                                        </div>
+                                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium laborum
+                                            quaerat dignissimos doloremque velit asperiores...</h3>
+                                    </div>
+                                    <div class="tweet_card_social_data">
+                                        <div class="tweet_social_card">
+                                            <i class="fa-solid fa-comment"></i>
+                                            <span>38</span>
+                                        </div>
+                                        <div class="tweet_social_card">
+                                            <i class="fa-solid fa-repeat"></i>
+                                            <span>68</span>
+                                        </div>
+                                        <div class="tweet_social_card">
+                                            <i class="fa-solid fa-heart"></i>
+                                            <span>629</span>
+                                        </div>
+                                        <div class="tweet_social_card">
+                                            <i class="fa-solid fa-share"></i>
+                                        </div>
+                                        <!-- ... other content ... -->
+                                    </div>
+                                    <div class="edit-delete-buttons">
+                                        <button class="edit-button">Edit</button>
+                                        <button class="delete-button">Delete</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            
+                                    
+                                   
+
+                            </div>
+                            <div class="post_card_bx">
+                                <div class="post_profile">
+                                    <img src="img1.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="user_name_time">
+                                        <h5>Sakshi Chhabra <img src="bluetick.png" alt="">
+                                            <p> @sakshi_chhabra </p>
+                                        </h5>
+                                        <h6><i class="fa-regular fa-clock"></i> 2 hours</h6>
+                                    </div>
+                                    <h3>Today on Diwali, Jaipur is decorated like a bride...</h3>
+                                    <div class="image_post_bx">
+                                        <img src="diwali1.png" alt="">
+                                        <img src="diwali2.png" alt="">
+                                        <img src="diwali3.png" alt="">
+                                    </div>
+                                    <div class="tweet_card_social_data">
+                                        <div class="tweet_social_card">
+                                            <i class="fa-solid fa-comment"></i>
+                                            <span>128</span>
+                                        </div>
+                                        <div class="tweet_social_card">
+                                            <i class="fa-solid fa-repeat"></i>
+                                            <span>293</span>
+                                        </div>
+                                        <div class="tweet_social_card">
+                                            <i class="fa-solid fa-heart"></i>
+                                            <span>4.8k</span>
+                                        </div>
+                                        <div class="tweet_social_card">
+                                            <i class="fa-solid fa-share"></i>
+                                        </div>
+                                    </div>
+                                    <div class="edit-delete-buttons">
+                                        <button class="edit-button">Edit</button>
+                                        <button class="delete-button">Delete</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post_card_bx">
+                                <div class="post_profile">
+                                    <img src="jindal.jpg" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="user_name_time">
+                                        <h5>Saksham Jindal <img src="bluetick.png" alt="">
+                                            <p> @jindal_saab163 </p>
+                                        </h5>
+                                        <h6><i class="fa-regular fa-clock"></i> 4 hours</h6>
+                                    </div>
+                                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet delectus saepe
+                                        mollitia, vitae error voluptatum totam recusandae ipsam numquam nesciunt, ex
+                                        veritatis necessitatibus dicta cum minima neque cupiditate maxime voluptate.
+                                    </h3>
+
+                                    <div class="tweet_card_social_data">
+                                        <div class="tweet_social_card">
+                                            <i class="fa-solid fa-comment"></i>
+                                            <span>568</span>
+                                        </div>
+                                        <div class="tweet_social_card">
+                                            <i class="fa-solid fa-repeat"></i>
+                                            <span>309</span>
+                                        </div>
+                                        <div class="tweet_social_card">
+                                            <i class="fa-solid fa-heart"></i>
+                                            <span>5k</span>
+                                        </div>
+                                        <div class="tweet_social_card">
+                                            <i class="fa-solid fa-share"></i>
+                                        </div>
+                                    </div>
+                                    <div class="edit-delete-buttons">
+                                        <button class="edit-button">Edit</button>
+                                        <button class="delete-button">Delete</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="follow_bx">
+                        <div class="trend_for_you">
+                            <nav>
+                                <h6>Trends for you</h6>
+                                <i class="fa-solid fa-gear"></i>
+                            </nav>
+                            <div class="trend_bx">
+                                <div class="post_card_bx">
+                                    <!-- ... other content ... -->
+                                   
+                                    <div class="content">
+                                        <h3><li><a href="#">#coldplay <br>
+                                         </a><i class="fa-solid fa-chevron-down"></i></li></h3> 
+                                        <div class="rate">
+                                            <h3 style="font-size: 10px; color: rgb(0,0,0,.3);">937k tweets</h3>
+                                    <div class="interest">
+                                        <div class="edit-delete-buttons" style="display: flex;">
+                                        <button class="edit-button" style="font-size: 14px; color: rgb(0,0,0,.6); font-weight: 400;display: flex;"><i class="fa-solid fa-face-smile"></i>Interested</button>
+                                        <button class="delete-button" style="font-size: 14px; color: rgb(0,0,0,.6); font-weight: 400;display: flex; margin: auto;"><i class="fa-solid fa-face-frown"></i>Not Interested</button>
+                                            </div>
+                                    </div>
+                                
+                                </div> 
+                                </div> 
+                                </div> 
+                                
+                                <div class="rate">
+                                    <div class="post_card_bx">
+                                        <!-- ... other content ... -->
+                                       
+                                        <div class="content">
+                                    <h3><li><a href="#">#kanwilliamson <br>
+                                            <p>1.86k tweets</p>
+                                        </a><i class="fa-solid fa-chevron-down"></i></li></h3>
+                                    <div class="interest">
+                                        <div class="edit-delete-buttons" style="display: flex;">
+                                            <button class="edit-button" style="font-size: 14px; color: rgb(0,0,0,.6); font-weight: 400;display: flex;"><i class="fa-solid fa-face-smile"></i>Interested</button>
+                                            <button class="delete-button" style="font-size: 14px; color: rgb(0,0,0,.6); font-weight: 400;display: flex; margin: auto;"><i class="fa-solid fa-face-frown"></i>Not Interested</button>
+                                                </div>
+                                    </div>
+                                </div>
+                                </div>
+                                </div>
+                                <div class="rate">
+                                    <div class="post_card_bx">
+                                        <!-- ... other content ... -->
+                                       
+                                        <div class="content">
+                                <h3> <li><a href="#">#conway <br>
+                                            <p>5.15k tweets</p>
+                                        </a><i class="fa-solid fa-chevron-down"></i></li></h3>
+                                    <div class="interest">
+                                        <div class="edit-delete-buttons" style="display: flex;">
+                                            <button class="edit-button" style="font-size: 14px; color: rgb(0,0,0,.6); font-weight: 400;display: flex;"><i class="fa-solid fa-face-smile"></i>Interested</button>
+                                            <button class="delete-button" style="font-size: 14px; color: rgb(0,0,0,.6); font-weight: 400;display: flex; margin: auto;"><i class="fa-solid fa-face-frown"></i>Not Interested</button>
+                                                </div>
+                                    </div>
+                                </div>
+                                </div>
+                                </div>
+                                <div class="rate">
+                                    <div class="post_card_bx">
+                                        <!-- ... other content ... -->
+                                       
+                                        <div class="content">
+                                <h3><li><a href="#">#rishabpant <br>
+                                            <p>937k tweets</p>
+                                        </a><i class="fa-solid fa-chevron-down"></i></li><h3>
+                                    <div class="interest">
+                                        <div class="edit-delete-buttons" style="display: flex;">
+                                            <button class="edit-button" style="font-size: 14px; color: rgb(0,0,0,.6); font-weight: 400;display: flex;"><i class="fa-solid fa-face-smile"></i>Interested</button>
+                                            <button class="delete-button" style="font-size: 14px; color: rgb(0,0,0,.6); font-weight: 400;display: flex; margin: auto;"><i class="fa-solid fa-face-frown"></i>Not Interested</button>
+                                                </div>
+                                    </div>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                            <button class="see_more">SEE MORE</button>
+                        </div>
+                        <div class="you_should_follow trend_for_you">
+                            <nav>
+                                <h6>You Should Follow</h6>
+                                <i class="fa-solid fa-rotate-right"></i>
+                            </nav>
+                            <div class="follow_bx">
+                                <div class="follow_profile_name">
+                                    <img src="msdhoni2.jpg" alt="" class="follow_profile">
+                                    <div class="user_name">
+                                        <div class="user_name_follow">
+                                            <h6>MS Dhoni</h6><img src="bluetick.png" alt="">
+                                        </div>
+                                        <p>@msdhoni</p>
+                                    </div>
+                                </div>
+                                <button>Follow</button>
+                            </div>
+                            <div class="follow_bx">
+                                <div class="follow_profile_name">
+                                    <img src="cristiono.jpg" alt="" class="follow_profile">
+                                    <div class="user_name">
+                                        <div class="user_name_follow">
+                                            <h6>Cristiano Ronaldo</h6><img src="bluetick.png" alt="">
+                                        </div>
+                                        <p>@ronaldo</p>
+                                    </div>
+                                </div>
+                                <button>Follow</button>
+                            </div>
+                            <div class="follow_bx">
+                                <div class="follow_profile_name">
+                                    <img src="viratKholi.jpeg" alt="" class="follow_profile">
+                                    <div class="user_name">
+                                        <div class="user_name_follow">
+                                            <h6>Virat Kholi</h6><img src="bluetick.png" alt="">
+                                        </div>
+                                        <p>@viratkholi</p>
+                                    </div>
+                                </div>
+                                <button>Follow</button>
+                            </div>
+                            <button class="see_more">SEE MORE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <script src="app.js"></script>
+</body>
+
+</html>
